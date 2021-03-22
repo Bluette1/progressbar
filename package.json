@@ -1,0 +1,20 @@
+{
+  "name": "progressbar",
+  "version": "1.0.0",
+  "description": "A simple progressbar built using javascript, html and css.",
+  "main": "Progressbar.js",
+  "author": "Marylene",
+  "scripts": {
+    "eslint-f": "npx eslint . --fix",
+    "stylelint-f": "npx stylelint **/*.{css,scss} --fix"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "babel-eslint": "10.1.x",
+    "eslint-config-airbnb-base": "14.1.x",
+    "eslint-plugin-import": "2.20.x",
+    "stylelint-config-standard": "20.0.x",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "3.17.x"
+  }
+}

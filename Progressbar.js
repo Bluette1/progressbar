@@ -9,19 +9,19 @@ let idx = 0;
 
 const showProgress = () => {
   if (start) {
-		start = false;
-		const id = setInterval(shift, 1000);
-		function shift() {
-			if (idx > RATES.length - 1) {
-				clearInterval(id);
-				start = true;
-				idx = 0;  
-				showProgress();
-			} else {
-				progressBar.style.width = `${(RATES[idx] / RATES[RATES.length - 1]) * 100}%`;
-				idx += 1;
-			}
-		}
+    start = false;
+    const id = setInterval(shift, 1000);
+    function shift() {
+      if (idx > RATES.length - 1) {
+        clearInterval(id);
+        start = true;
+        idx = 0;
+        showProgress();
+      } else {
+        progressBar.style.width = `${(RATES[idx] / RATES[RATES.length - 1]) * 100}%`;
+        idx += 1;
+      }
     }
-}
+  }
+};
 showProgress();

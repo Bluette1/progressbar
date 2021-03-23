@@ -13,7 +13,7 @@ A simple progress bar built using Javascript, HTML, and CSS.
 
 ## Description
 
-A simple progress bar built using Javscript, HTML and CSS.
+A simple progress bar built using Javascript, HTML, and CSS.
 
 [Demo](https://bluette1.github.io/progressbar/) 
 

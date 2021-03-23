@@ -15,7 +15,7 @@ A simple progress bar built using Javscript, HTML and CSS.
 
 A simple progress bar built using Javscript, HTML and CSS.
 
-[Demo](https://rawcdn.githack.com/Bluette1/progressbar/feature/add-progressbar/Progressbar.html)
+[Demo](https://rawcdn.githack.com/Bluette1/progressbar/tree/feature/add-progressbar)
 
 
 ## Authors

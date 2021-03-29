@@ -1,18 +1,37 @@
 const mainContainer = document.querySelector('.progressbar-main');
+const wrapper = document.createElement('div');
+wrapper.classList.add('wrapper');
 const progressBarContainer = document.createElement('div');
 
 progressBarContainer.classList.add('progressbar-container');
 
 const progressBar = document.createElement('div');
 progressBarContainer.append(progressBar);
-mainContainer.append(progressBarContainer);
+wrapper.append(progressBarContainer);
 progressBar.classList.add('progressbar');
 const displayText = document.createElement('div');
 displayText.classList.add('display-text');
-mainContainer.append(displayText);
+wrapper.append(displayText);
 
+const progressCircularContainer = document.createElement('div');
+
+progressCircularContainer.classList.add('progress-circular-container');
+
+const progressCircular = document.createElement('div');
+progressCircularContainer.append(progressCircular);
+const circularWrapper = document.createElement('div');
+circularWrapper.classList.add('circular-wrapper');
+circularWrapper.append(progressCircularContainer);
+wrapper.append(circularWrapper);
+progressCircular.classList.add('progress-circle');
+const displayTextCircle = document.createElement('div');
+displayTextCircle.classList.add('display-text-circle');
+circularWrapper.append(displayTextCircle);
+
+mainContainer.append(wrapper);
 const RATES = [0, 100, 200, 300, 400];
 let start = true;
+
 let idx = 0;
 
 let id;
@@ -26,6 +45,13 @@ const shift = () => {
     const width = `${(RATES[idx] / RATES[RATES.length - 1]) * 100}%`;
     progressBar.style.width = width;
     displayText.textContent = width;
+
+    const circleWidth = `${(RATES[idx] / RATES[RATES.length - 1]) * 200}px`;
+    const circleHeight = `${(RATES[idx] / RATES[RATES.length - 1]) * 200}px`;
+
+    progressCircular.style.width = circleWidth;
+    progressCircular.style.height = circleHeight;
+    displayTextCircle.textContent = width;
     idx += 1;
   }
 };

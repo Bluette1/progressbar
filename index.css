@@ -28,16 +28,23 @@ body {
   overflow-x: hidden;
   position: relative;
 }
+
 #root {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  height: 600px;
+  margin-top: 5%;
 }
 
 .progressbar-main {
   width: 100%;
-  padding:2%;
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 100%;
 }
 
 .progressbar-container {
@@ -50,14 +57,42 @@ body {
   padding-left: 10px;
   padding-right: 10px;
 }
+
 .progressbar {
   height: 50px;
-  background-color: #00ffff;
+  background-color: #0ff;
+}
+
+.circular-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 120px;
+}
+
+.progress-circular-container {
+  height: 200px;
+  width: 200px;
+  background-color: #0034ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.progress-circle {
+  height: 100px;
+  width: 100px;
+  background-color: #0ff;
+  border-radius: 50%;
+}
+
+.display-text,
+.display-text-circle {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 2.2rem;
+  padding: 1rem;
 }
 
 .display-text {
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size:2.2rem;
   text-align: center;
-  padding: 1rem;
 }

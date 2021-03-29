@@ -1,7 +1,7 @@
 ﻿# progressbar
 A simple progress bar built using Javascript, HTML, and CSS.
 
-![Demo picture](./progressbar.gif)
+![Demo picture progressbar](./screenshot.gif)
 
 
 ## Built With

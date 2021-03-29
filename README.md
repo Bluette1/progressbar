@@ -1,8 +1,7 @@
 ﻿# progressbar
 A simple progress bar built using Javscript, HTML and CSS.
 
-![Demo picture progressbar](./progressbar.gif)
-![Demo picture progresscircle](./progresscircle.gif)
+![Demo picture progressbar](./screenshot.gif)
 
 
 ## Built With
